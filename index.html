@@ -1,541 +1,145 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-   <head>
-      <style>
-         div {
-         text-align: justify;
-         text-justify: inter-word;
-         }
-      </style>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <link rel="shortcut icon" href="assets/ico/favicon.png">
-      <title>Jaydeep Ingle Résumé</title>
-      <link href="assets/css/bootstrap.css" rel="stylesheet">
-      <link href="assets/css/main.css" rel="stylesheet">
-      <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-      <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-      <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-      <script src="assets/js/jquery.min.js"></script>
-      <script type="text/javascript" src="assets/js/smoothscroll.js"></script> 
-      <script src="assets/js/Chart.js"></script>
-   </head>
-   <body data-spy="scroll" data-offset="0" data-target="#nav">
-      <div id="section-topbar">
-         <div id="topbar-inner">
-            <div class="container">
-               <div class="row">
-                  <div class="dropdown">
-                     <ul id="nav" class="nav">
-                        <li class="menu-item"><a class="smoothScroll" href="#about" title="About"><i class="icon-user"></i></a></li>
-                        <li class="menu-item"><a class="smoothScroll" href="#resume" title="Resume"><i class="icon-file"></i></a></li>
-                        <li class="menu-item"><a class="smoothScroll" href="#contact" title="Contact"><i class="icon-envelope"></i></a></li>
-                     </ul>
-                  </div>
-                  <div class="clear"></div>
-               </div>
-            </div>
-            <div class="clear"></div>
-         </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f2">
+  <meta name="description" content="Jaydeep Ingle is a senior software engineer building distributed systems, cloud platforms, and AI infrastructure. Engineering experience at Oracle, AWS, and VMware.">
+  <meta name="author" content="Jaydeep Ingle">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jaydeep Ingle — Senior Software Engineer">
+  <meta property="og:description" content="Complex systems. Clear direction. A decade of building cloud infrastructure at Oracle, AWS, and VMware.">
+  <meta property="og:url" content="https://jaydeepingle.github.io/">
+  <meta property="og:image" content="https://jaydeepingle.github.io/assets/img/social-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Jaydeep Ingle — Complex systems. Clear direction. Distributed systems, cloud and AI infrastructure.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://jaydeepingle.github.io/">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/main.js" defer></script>
+  <noscript><style>@media(max-width:600px){.site-header{position:static}.header-inner{height:auto;min-height:68px;flex-wrap:wrap;padding-top:15px}.menu-toggle{display:none}#navigation{display:flex;position:static;flex-direction:row;flex-wrap:wrap;width:100%;gap:8px 20px;padding:12px 0;box-shadow:none;border:0}}</style></noscript>
+  <title>Jaydeep Ingle — Senior Software Engineer · Cloud &amp; AI Infrastructure</title>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Jaydeep Ingle","url":"https://jaydeepingle.github.io/","jobTitle":"Senior Member of Technical Staff","worksFor":{"@type":"Organization","name":"Oracle"},"sameAs":["https://www.linkedin.com/in/jaydeep-ingle","https://github.com/jaydeepingle"],"knowsAbout":["Distributed systems","Cloud infrastructure","AI infrastructure","Platform architecture"]}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="#" aria-label="Jaydeep Ingle, home"><span class="monogram" aria-hidden="true">ji<span>.</span></span><span>Jaydeep Ingle</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">+</span></button>
+      <nav id="navigation" aria-label="Main navigation">
+        <a href="#work">Selected work</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a class="nav-contact" href="#contact">Let’s connect <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-heading">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Senior software engineer · Redmond, WA</p>
+        <h1 id="hero-heading">Complex systems.<br><em>Clear direction.</em></h1>
+        <p class="hero-description">I build the infrastructure behind reliable cloud platforms. A decade of turning hard engineering problems into systems that teams can trust.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↘</span></a>
+          <a class="text-link" href="assets/docs/Jaydeep-Ingle-Resume.pdf" target="_blank" rel="noopener">View résumé <span aria-hidden="true">↗</span><span class="sr-only"> (PDF, opens in a new tab)</span></a>
+        </div>
+        <p class="current-role"><span class="small-label">Currently</span> Senior Member of Technical Staff<br><span class="current-company">Oracle · OCI AI Infrastructure</span></p>
       </div>
-      <div id="headerwrap">
-         <div class="container">
-            <div class="row centered">
-               <div class="col-lg-12">
-                  <h1>Jaydeep D. Ingle</h1>
-                  <h3>CS Graduate Student at SUNY, Binghamton</h3>
-               </div>
-            </div>
-         </div>
+
+      <div class="system-art" role="img" aria-label="Conceptual infrastructure diagram: an orchestrator connects identity, provisioning, and observability to a distributed compute fleet.">
+        <div class="art-topline"><span>FROM ARCHITECTURE TO OPERATION</span><span aria-hidden="true">↗</span></div>
+        <div class="diagram">
+          <div class="diagram-label">CONTROL PLANE</div>
+          <div class="orchestrator"><span class="node-icon" aria-hidden="true">◇</span> Orchestrator <span class="node-dot"></span></div>
+          <div class="connector connector-stem"></div>
+          <div class="connector connector-bus"></div>
+          <div class="service-row">
+            <div class="service-node"><span class="service-glyph" aria-hidden="true">⌘</span><span>Identity</span></div>
+            <div class="service-node"><span class="service-glyph" aria-hidden="true">⊞</span><span>Provisioning</span></div>
+            <div class="service-node"><span class="service-glyph" aria-hidden="true">⌁</span><span>Observability</span></div>
+          </div>
+          <div class="fleet-connector"></div>
+          <div class="fleet">
+            <div class="fleet-label"><span>DISTRIBUTED COMPUTE</span><span aria-hidden="true">01 — 06</span></div>
+            <div class="fleet-nodes" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+        </div>
+        <div class="art-bottomline"><span><span class="art-dot"></span> Built for the real world.</span><span>FIG. 01</span></div>
       </div>
-      <section id="about" name="about"></section>
-      <div id="intro">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-2 col-lg-offset-1">
-                  <h5>ABOUT</h5>
-               </div>
-               <div class="col-lg-6">
-                  Recently, I graduated from SUNY Binghamton and pursued Masters in Computer Science. My area of interests 
-                  include Web Development, Computer Networks and Distributed Systems. 
-                  <br />
-                  <br />
-                  <br />
-                  <b>Skills</b> <br/>
-                  <li>Languages: Java (Proficient), JavaScript (Proficient), Python (Intermediate), C (Intermediate), C++, Shell Scripts</li>
-                  <li>Database: MongoDB, PostgreSQL, MySQL </li>
-                  <li>Web: React.js, Backbone.js, Node.js, Underscore.js, ES6, jQuery, Require.js, HTML5, CSS3, Bootstrap, Redux, Webpack, Babel</li>
-                  <li>Frameworks: J2EE Spring MVC Framework, ReactNative, Express JS Framework</li>
-                  <li>Tools and Technologies: GCP, OpenStack, AWS, JIRA, Git, Gitlab, Jenkins, Thrift, Dust.js, J2EE, Docker, ODBC, JDBC, Java AWT,
-                     Swing, Kanban, Scrum, Agile, Sprint, Maven, Apache, IntelliJ, Visual Studio Code
-                  </li>
-                  <br />
-                  <br />
-                  I'm actively looking for full-time opportunities starting immediately.<br/>
-                  You can reach me via my LinkedIn profile or 
-                  Mail ID - jingle1@binghamton.edu<br/><br/>
-               </div>
-               <div class="col-lg-3">
-                  <p>
-                     <a href="assets/docs/Jaydeep Ingle Resume.pdf"><i class="icon-file"></i></a> 
-                     <sm>DOWNLOAD PDF</sm>
-                  </p>
-               </div>
-            </div>
-         </div>
+    </section>
+
+    <div class="company-band container" aria-label="Engineering experience at Oracle, Amazon Web Services, and VMware">
+      <p class="small-label">Engineering at scale</p>
+      <div class="company-names"><span class="company-oracle">ORACLE</span><span class="company-aws">amazon <b>web services</b></span><span class="company-vmware">vmware<span>®</span></span></div>
+      <span class="tenure">10+ years of building</span>
+    </div>
+
+    <section class="section container" id="work" aria-labelledby="work-heading">
+      <div class="section-heading"><div><p class="eyebrow">01 / Selected impact</p><h2 id="work-heading">Built to make a difference.</h2></div><p>A few examples of making complex platforms<br class="desktop-break"> more reliable, simpler, and faster.</p></div>
+      <div class="work-grid">
+        <article class="work-card work-card-featured">
+          <div class="card-top"><span class="small-label">Oracle · AI infrastructure</span><span class="card-number">01</span></div>
+          <div class="metric">6<span>mission-critical services</span></div>
+          <h3>Taking cloud infrastructure<br>into new environments.</h3>
+          <p>Led architecture and delivery for host-provisioning services in an isolated cloud environment. Connected identity, authorization, TLS, private DNS, and deployment orchestration into a cohesive platform.</p>
+          <div class="card-result"><span class="result-mark" aria-hidden="true">↗</span><span>Healthy releases across <strong>21 of 21 nodes</strong></span></div>
+          <div class="tags"><span>Platform architecture</span><span>Terraform</span><span>Security</span></div>
+        </article>
+        <article class="work-card">
+          <div class="card-top"><span class="small-label">Amazon · AWS</span><span class="card-number">02</span></div>
+          <div class="metric">25<span class="metric-symbol">%</span><span>higher deployment throughput</span></div>
+          <h3>A clearer path<br>from code to production.</h3>
+          <p>Stabilized integration tests and modernized TypeScript and CDK approval workflows. Simplified redundant compliance workflows and designed decoupled control- and data-plane services.</p>
+          <div class="card-result"><span class="result-mark" aria-hidden="true">↗</span><span>Faster delivery. Fewer points of failure.</span></div>
+          <div class="tags"><span>CI/CD</span><span>Distributed systems</span><span>AWS</span></div>
+        </article>
+        <article class="work-card">
+          <div class="card-top"><span class="small-label">Oracle · Cloud operations</span><span class="card-number">03</span></div>
+          <div class="metric">5<span class="metric-symbol">×</span><span>application load performance</span></div>
+          <h3>Making infrastructure<br>easier to understand.</h3>
+          <p>Built services that translated physical rack and network topology into an interactive operations UI. Integrated an optimized backend API to improve application load performance fivefold.</p>
+          <div class="card-result"><span class="result-mark" aria-hidden="true">↗</span><span>From physical assets to operational clarity.</span></div>
+          <div class="tags"><span>Python</span><span>React / TypeScript</span><span>Automation</span></div>
+        </article>
       </div>
-      <section id="resume" name="resume"></section>
-      <!--EDUCATION DESCRIPTION -->
-      <div class="container desc">
-         <div class="row">
-            <div class="col-lg-2 col-lg-offset-1">
-               <h5>EDUCATION</h5>
-            </div>
-            <div class="col-lg-6">
-               <p>
-                  <t>Master of Science - Computer Science</t>
-                  <br/>
-                  State University of New York at Binghamton<br/>
-                  <i>2 Years Course</i>
-               <p>Design and Analysis of Algorithms, Programming Languages, Distributed Systems, Machine Learning,
-                  Operating System, Computer Organization and Architecture, Design Patterns, Programming for the Web, System Programming
-               </p>
-               </p>
-            </div>
-            <div class="col-lg-3">
-               <p>
-                  <sm>MAY 2018</sm>
-               </p>
-            </div>
-            <div class="col-lg-6 col-lg-offset-3">
-               <p>
-                  <t>Bachelor of Technology - Computer Engineering</t>
-                  <br/>
-                  College of Engineering, Pune <br/>
-                  <i>3 Years Course</i>
-               <p>Storage & Virtualization, System Programming, Advanced Computer Architecture, Computer Networks, Information Security</p>
-               </p>
-            </div>
-            <div class="col-lg-3">
-               <p>
-                  <sm>MAY 2014</sm>
-               </p>
-            </div>
-            <div class="col-lg-6 col-lg-offset-3">
-               <p>
-                  <t>Diploma - Computer Engineering</t>
-                  <br/>
-                  Government Polytechnic Khamgaon<br/>
-                  <i>3 Years Course</i>
-               <p>Java Programming, Advanced Java Programming, Computer Security, Microprocessor, Advanced Microprocessor</p>
-               </p>
-            </div>
-            <div class="col-lg-3">
-               <p>
-                  <sm>MAY 2011</sm>
-               </p>
-            </div>
-         </div>
-         <br>
-         <hr>
+    </section>
+
+    <section class="experience-section" id="experience" aria-labelledby="experience-heading">
+      <div class="container experience-layout">
+        <div class="experience-intro"><p class="eyebrow">02 / The journey</p><h2 id="experience-heading">Depth across<br> the stack.<br><em>Perspective<br> across teams.</em></h2><p>From network orchestration to cloud control planes and GPU fleets, the throughline is the same: make complicated systems work well together.</p><a class="text-link" href="assets/docs/Jaydeep-Ingle-Resume.pdf" download>Download full résumé <span aria-hidden="true">↓</span></a></div>
+        <div class="timeline">
+          <article class="job current-job"><div class="job-top"><h3>Oracle <span class="job-division">OCI AI Infrastructure</span></h3><span class="current-badge">Current</span></div><p class="job-role">Senior Member of Technical Staff</p><p class="job-meta">Mar 2026 — Present <span>Seattle, WA</span></p><p>Leading secure service onboarding and cross-service hardware validation for GPU and bare-metal provisioning.</p><details><summary>Scope &amp; contributions <span aria-hidden="true">+</span></summary><ul><li>Defined identity, least-privilege access, and deployment orchestration for six host-provisioning services in an isolated cloud environment.</li><li>Connected hardware validation and precise failure reporting across GPU fleet provisioning services.</li><li>Re-architected a workflow exceeding 40 minutes with batched transitions and job lookups; delivered a bulk host-status API for downstream automation.</li><li>Applied LLMs and coding agents to multi-repository analysis, test development, code reviews, and incident triage, with production-quality validation.</li></ul></details></article>
+          <article class="job"><div class="job-top"><h3>Amazon <span class="job-division">AWS</span></h3></div><p class="job-role">Software Development Engineer II</p><p class="job-meta">Jan 2025 — Jan 2026 <span>Seattle, WA</span></p><p>Improved Amazon Connect’s reliability, compliance workflows, and release velocity through simpler service architecture.</p><details><summary>Scope &amp; contributions <span aria-hidden="true">+</span></summary><ul><li>Consolidated GDPR deletion workflows with Step Functions, retiring a redundant service and API.</li><li>Designed dual-write Lambdas and dedicated control- and data-plane services to reduce latency and remove a single point of failure.</li><li>Eliminated throttling for large customer inventories with a DynamoDB-backed quota cache.</li><li>Improved deployment throughput by 25% through integration-test stability and CI/CD modernization.</li></ul></details></article>
+          <article class="job"><div class="job-top"><h3>VMware <span class="job-division">by Broadcom</span></h3></div><p class="job-role">Senior Software Engineer</p><p class="job-meta">Jun 2022 — Jan 2025 <span>Bellevue, WA</span></p><p>Built Spring APIs for the NSX VC plugin to automate ESXi host networking, and expanded production diagnostics with Python and Shell tooling.</p></article>
+          <article class="job"><div class="job-top"><h3>Oracle <span class="job-division">OCI</span></h3></div><p class="job-role">Senior Member of Technical Staff</p><p class="job-meta">Oct 2019 — Jun 2022 <span>Seattle, WA</span></p><p>Built cloud asset-management services and topology visualization, connecting Python automation to React and TypeScript operations tools.</p></article>
+          <article class="job"><div class="job-top"><h3>RootMetrics <span class="job-division">by IHS Markit</span></h3></div><p class="job-role">Software Developer · Full Stack</p><p class="job-meta">Sep 2018 — Oct 2019 <span>Bellevue, WA</span></p><p>Delivered carrier-network analytics and field-agent monitoring tools with Angular, Django, React, and Express.</p></article>
+          <article class="job"><div class="job-top"><h3>Globant</h3></div><p class="job-role">Software Engineer</p><p class="job-meta">Aug 2014 — Jul 2016 <span>Pune, India</span></p><p>Built multi-tenant SDN and NFV orchestration software with Java and Backbone.js. Mentored four undergraduate contributors through product ramp-up and delivery.</p></article>
+        </div>
       </div>
-      <!--WORK DESCRIPTION -->
-      <div class="container desc">
-         <div class="row">
-            <div class="col-lg-2 col-lg-offset-1">
-               <h5>WORK</h5>
-            </div>
-            <div class="col-lg-6">
-               <p>
-                  <t>Technology Development and Strategy Intern</t>
-                  <br/>
-                  Sprint <br/>
-               </p>
-               <p>
-               <li>Built ReactNative mobile app for registration, beacon detection and triggering profile and location sharing with the server</li>
-               <li>Researched Hyperscan, a tool that filters out packets as per user-defined rules</li>
-               <li>Developed WebApp for people authentication on OpenStack platform using REST services in Node.js with MongoDB and UI in React.js, Babel, Webpack, Keystone, Shibboleth</li>
-               <li>Designed IoT project utilizing Humanoid Sanbot to identify and greet users entering the store and to scan the inventory. </li>
-               <li>Implemented REST Services using Node.js to demonstrate CDNI by streaming video through chose CDN servers</li>
-               <!-- • Worked on Hyperscan where allowed users to define rules to filter out the packets using Open Source Pattern Matching<br>
-                  • Developed household useful application with Choreographe and Raspberry PI which can be used with Pepper or Nao Robots<br>
-                  • Designed IoT project for Humanoids like Pepper & NAO (from Softbank) as proof of concept<br>
-                  • Implemented the above project for Humanoids to extend its functionality and make it usable in automating real life scenarios<br>
-                  • Built Single Page application for monitoring VMs using Single Sign On. Technology stack includes - OpenStack, Keystone,
-                  Shibboleth, CAS, React JS, Babel, Webpack<br> -->
-               </p>
-            </div>
-            <div class="col-lg-3">
-               <p>
-                  <sm>MAY 2017 - AUGUST 2017</sm>
-               </p>
-            </div>
-            <!-- <div class="col-lg-6"> -->
-            <div class="col-lg-6 col-lg-offset-3">
-               <p>
-                  <t>Web UI Developer - Software Engineer</t>
-                  <br/>
-                  Globant India Pvt. Ltd. <br/>
-               </p>
-               <p>
-               <li>Developed a SaaS application following MVC pattern using J2EE Spring MVC Framework and Backbone JS for providing SDN, NFV, Software Defined WAN, High Availability and setting up Virtual Machines</li>
-               <li>Developed a highly scalable product which provides essential management and orchestration capabilities needed to deliver Versa VNF based network and security services for a variety of use cases, including virtual CPE (vCPE), SD-WAN and branch security</li>
-               <li>Created NFV web application that offers an alternative way to design, deploy, and manage networking services which are a complementary approach to software-defined networking (SDN) for network management for multi-tenancy</li>
-               <li>Adapted Agile Development Methodology to facilitate the assessment of the direction of a project in the development cycle</li>
-               <li>Form Builder - Constructed a platform to make customizable forms with Backbone.js. </li>
-               <li>Built an efficient crawler using jsdom browser and a java application for efficient data mining using many encryption operations</li>
-               <li>Mentored a group of 4 undergraduates to learn and understand the product as soon as possible and quickly become productive</li>
-               <!-- • Implemented Single Page Application for creating virtual organizations, templates, appliances, and bare metal devices<br>
-                  • Crafted UI for providing virtual customer premises equipment (vCPE) solutions<br>
-                  • Developed MVC in Backbone JS and UI for NFV, SDWAN, High Availability (HA), setting up Virtual Machines (VM)<br>
-                  • Gained experience in using REST APIs. Developed few widgets with the help of jQuery and JS<br>
-                  • Developed Front End for Versa Director (Cloud Orchestration & Automation Engine) - Versa Networks Inc<br>
-                  • Built a Web based product for SDN using Java, Spring, BackboneJS, RequireJS, HTML 5, jQuery etc.<br>
-                  • Created a Java application for mining data by performing several kinds of operations using random matrices generation<br>
-                  • Built a JS app using jsdom browser environment to fetch thesauruses from thesaurus.com -->
-               </p>
-            </div>
-            <div class="col-lg-3">
-               <p>
-                  <sm>AUGUST 2014 - JULY 2016</sm>
-               </p>
-            </div>
-         </div>
-         <br>
-         <hr>
+    </section>
+
+    <section class="section container" id="about" aria-labelledby="about-heading">
+      <div class="about-top"><div><p class="eyebrow">03 / How I work</p><h2 id="about-heading">Think in systems.<br><em>Stay close to the details.</em></h2></div><div class="about-copy"><p>I’m a software engineer based in Redmond, Washington, with 10+ years of experience across distributed systems and cloud infrastructure.</p><p>My work spans architecture and implementation: defining service boundaries, navigating cross-team dependencies, and following a change all the way into production. I bring hands-on depth in Java and Python, and a focus on reliability, security, and the people operating the system.</p></div></div>
+      <div class="expertise-grid">
+        <div class="expertise"><span class="expertise-index">01</span><h3>Architecture &amp; ownership</h3><p>Platform design, control planes, cross-service integration, workflow orchestration, technical mentorship.</p></div>
+        <div class="expertise"><span class="expertise-index">02</span><h3>Cloud &amp; AI infrastructure</h3><p>AWS, OCI, GPU and bare-metal provisioning, fleet health, hardware validation, infrastructure automation.</p></div>
+        <div class="expertise"><span class="expertise-index">03</span><h3>Backend &amp; distributed systems</h3><p>Java, Python, TypeScript, Spring Boot, REST APIs, event-driven services, DynamoDB, SQL.</p></div>
+        <div class="expertise"><span class="expertise-index">04</span><h3>Reliability &amp; delivery</h3><p>Terraform, CloudFormation / CDK, CI/CD, observability, TLS / PKI, service authentication.</p></div>
       </div>
-      <!--PROJECT DESCRIPTION -->
-      <div class="container desc">
-         <div class="row">
-            <div class="col-lg-2 col-lg-offset-1">
-               <h5>PROJECT EXPERIENCE</h5>
-            </div>
-            <div class="col-lg-6">
-               <p>
-                  <t>Two Phase Commit</t>
-                  <br/>
-                  State University of New York at Binghamton<br/>
-                  <!-- <i>2 Years Course</i> -->
-               <p>• Implemented 2 Phase Commit Protocol with fault tolerance using python<br>
-                  • Written test programs to test participants (servers), coordinator and client for durability, concurrency, and recovery
-               </p>
-               </p>
-            </div>
-            <div class="col-lg-3">
-               <p>
-                  <sm>BINGHAMTON 2016</sm>
-                  <br/>
-                  <!-- <imp><sm>IN PROGRESS</sm></imp> -->
-               </p>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-lg-2 col-lg-offset-1">
-               <!-- <h5>PROJECT EXPERIENCE</h5> -->
-            </div>
-            <div class="col-lg-6">
-               <p>
-                  <t>Mechanism for taking Global snapshots of a Distributed Banking Application</t>
-                  <br/>
-                  State University of New York at Binghamton<br/>
-               <p>• Written a banking app a controller to take global snapshots and validate whether the money transfer is taking place correctly<br>
-                  • Made use of Chandy-Lamport global snapshot algorithm to take global snapshots of the bank
-               </p>
-               </p>
-            </div>
-            <div class="col-lg-3">
-               <p>
-                  <sm>BINGHAMTON 2016</sm>
-                  <br/>
-               </p>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-lg-2 col-lg-offset-1">
-               <!-- <h5>PROJECT EXPERIENCE</h5> -->
-            </div>
-            <div class="col-lg-6">
-               <p>
-                  <t>Remote Desktop Application</t>
-                  <br/>
-                  College of Engineering Pune<br/>
-               <p>• Established a connection between an android phone and laptop via an android app using various networking protocols suchas RFB (Remote Framebuffer Protocol), VNC (Virtual Network Computing) and RDP (Remote Desktop)<br>• It was mandatory for both the devices to have a connection via same access point to same network</p>
-               </p>
-            </div>
-            <div class="col-lg-3">
-               <p>
-                  <sm>PUNE 2013 - 14</sm>
-                  <br/>
-               </p>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-lg-2 col-lg-offset-1">
-               <!-- <h5>PROJECT EXPERIENCE</h5> -->
-            </div>
-            <div class="col-lg-6">
-               <p>
-                  <t>Discussion Forum</t>
-                  <br/>
-                  College of Engineering Pune<br/>
-               <p>• Formed a medium between students and professors to share the opinion regarding studies, coursework, assignment, etc.<br>
-                  • Made use of MySQL, LAMP, JavaScript, PHP, and HTML to develop this application
-               </p>
-               </p>
-            </div>
-            <div class="col-lg-3">
-               <p>
-                  <sm>PUNE 2012 - 13</sm>
-                  <br/>
-               </p>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-lg-2 col-lg-offset-1">
-               <!-- <h5>PROJECT EXPERIENCE</h5> -->
-            </div>
-            <div class="col-lg-6">
-               <p>
-                  <t>Profile Directory</t>
-                  <br/>
-                  Government Polytechnic Khamgaon<br/>
-               <p>• Created a social networking standalone application like Orkut. Made use of ODBC JDBC Connectivity<br>
-                  • It allows user to create an account, update his Personal, Social, Professional, Contact and any other General information<br>
-                  • Implemented using core Java and AWT. Later made the use of Swing Toolkit. ODBC Database - MS Access was used
-               </p>
-               </p>
-            </div>
-            <div class="col-lg-3">
-               <p>
-                  <sm>KHAMGAON 2010 - 11</sm>
-                  <br/>
-               </p>
-            </div>
-         </div>
-         <br>
-         <hr>
-      </div>
-      <!--AWARDS DESCRIPTION -->
-      <div class="container desc">
-         <div class="row">
-            <div class="col-lg-2 col-lg-offset-1">
-               <h5>HONORS AND AWARDS <br/>EXTRACURRICULAR </h5>
-            </div>
-            <div class="col-lg-6">
-               <p>
-                  <t>Spark of Excellence'16</t>
-                  <br/>
-                  Globant India Pvt Ltd<br/>
-               <p>Received this award for the worthy contribution to the project.</p>
-               </p>
-            </div>
-            <div class="col-lg-3">
-               <p>
-                  <sm>PUNE 2016</sm>
-                  <br/>
-               </p>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-lg-2 col-lg-offset-1">
-            </div>
-            <div class="col-lg-6">
-               <p>
-                  <t>Spark of Excellence'15</t>
-                  <br/>
-                  Clarice Technologies<br/>
-               <p>Received for valuable contribution to the project</p>
-               </p>
-            </div>
-            <div class="col-lg-3">
-               <p>
-                  <sm>PUNE 2016</sm>
-                  <br/>
-               </p>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-lg-2 col-lg-offset-1">
-            </div>
-            <div class="col-lg-6">
-               <p>
-                  <t>Part of Guinness Book of World Record – Rubik’s cube</t>
-                  <br/>
-                  College of Engineering Pune<br/>
-               <p>Solved Rubik's cube within 2 minutes alongwith 3248 people.</p>
-               </p>
-            </div>
-            <div class="col-lg-3">
-               <p>
-                  <sm>PUNE 2014</sm>
-                  <br/>
-               </p>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-lg-2 col-lg-offset-1">
-            </div>
-            <div class="col-lg-6">
-               <p>
-                  <t>Runner-up Paper Presentation – Android OS</t>
-                  <br/>
-                  Government Polytechnic Khamgaon<br/>
-               <p>Presented a paper on Android OS and received the second prize at Pune Vidyarthi Griha</p>
-               </p>
-            </div>
-            <div class="col-lg-3">
-               <p>
-                  <sm>PUNE 2016</sm>
-                  <br/>
-               </p>
-            </div>
-         </div>
-         <br>
-      </div>
-      <!--SKILLS DESCRIPTION -->
-      <div id="skillswrap">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-2 col-lg-offset-1">
-                  <h5>SKILLS</h5>
-               </div>
-               <div class="col-lg-3 centered">
-                  <canvas id="javascript" height="130" width="130"></canvas>
-                  <p>Javascript</p>
-                  <br>
-                  <script>
-                     var doughnutData = [
-                     		{
-                     			value: 85,
-                     			color:"#1abc9c"
-                     		},
-                     		{
-                     			value : 15,
-                     			color : "#ecf0f1"
-                     		}
-                     	];
-                     	var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
-                  </script>
-               </div>
-               <div class="col-lg-3 centered">
-                  <canvas id="java" height="130" width="130"></canvas>
-                  <p>Java</p>
-                  <br>
-                  <script>
-                     var doughnutData = [
-                     		{
-                     			value: 90,
-                     			color:"#1abc9c"
-                     		},
-                     		{
-                     			value : 10,
-                     			color : "#ecf0f1"
-                     		}
-                     	];
-                     	var myDoughnut = new Chart(document.getElementById("java").getContext("2d")).Doughnut(doughnutData);
-                  </script>
-               </div>
-               <div class="col-lg-3 centered">
-                  <canvas id="jQuery" height="130" width="130"></canvas>
-                  <p>React</p>
-                  <br>
-                  <script>
-                     var doughnutData = [
-                     		{
-                     			value: 90,
-                     			color:"#1abc9c"
-                     		},
-                     		{
-                     			value : 10,
-                     			color : "#ecf0f1"
-                     		}
-                     	];
-                     	var myDoughnut = new Chart(document.getElementById("jQuery").getContext("2d")).Doughnut(doughnutData);
-                  </script>
-               </div>
-               <div class="col-lg-3 col-lg-offset-3 centered">
-                  <canvas id="html" height="130" width="130"></canvas>
-                  <p>HTML/CSS</p>
-                  <br>
-                  <script>
-                     var doughnutData = [
-                     		{
-                     			value: 80,
-                     			color:"#1abc9c"
-                     		},
-                     		{
-                     			value : 20,
-                     			color : "#ecf0f1"
-                     		}
-                     	];
-                     	var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
-                  </script>
-               </div>
-               <div class="col-lg-3 centered">
-                  <canvas id="bootstrap" height="130" width="130"></canvas>
-                  <p>Redux</p>
-                  <br>
-                  <script>
-                     var doughnutData = [
-                     		{
-                     			value: 80,
-                     			color:"#1abc9c"
-                     		},
-                     		{
-                     			value : 20,
-                     			color : "#ecf0f1"
-                     		}
-                     	];
-                     	var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
-                  </script>
-               </div>
-               <div class="col-lg-3 centered">
-                  <canvas id="python" height="130" width="130"></canvas>
-                  <p>Spring MVC</p>
-                  <br>
-                  <script>
-                     var doughnutData = [
-                     		{
-                     			value: 50,
-                     			color:"#1abc9c"
-                     		},
-                     		{
-                     			value : 50,
-                     			color : "#ecf0f1"
-                     		}
-                     	];
-                     	var myDoughnut = new Chart(document.getElementById("python").getContext("2d")).Doughnut(doughnutData);
-                  </script>
-               </div>
-            </div>
-         </div>
-      </div>
-      <section id="work" name="work"></section>
-      <section id="contact" name="contact"></section>
-      <!--FOOTER DESCRIPTION -->
-      <div id="footwrap">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-2 col-lg-offset-1">
-                  <h5>CONTACT</h5>
-               </div>
-               <div class="col-lg-6">
-               </div>
-               <div class="col-lg-3">
-                  <p>
-                     <sm>SOCIAL LINKS</sm>
-                  </p>
-                  <p>
-                     <a href="https://jaydeepingle.github.io/"><i class="icon-dribbble"></i></a>
-                     <a href="https://twitter.com/jaydeep_ingle"><i class="icon-twitter"></i></a>
-                     <a href="https://www.linkedin.com/in/jaydeep-ingle"><i class="icon-linkedin"></i></a>
-                  </p>
-               </div>
-            </div>
-         </div>
-      </div>
-      <script src="assets/js/bootstrap.js"></script>
-   </body>
+      <div class="education"><p class="small-label">Foundations</p><div><h3>MS, Computer Science</h3><p>SUNY Binghamton <span>2016 — 2018</span></p></div><div><h3>BTech, Computer Engineering</h3><p>College of Engineering Pune <span>2011 — 2014</span></p></div></div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="container contact-inner"><div><p class="eyebrow">04 / Start a conversation</p><h2 id="contact-heading">Good systems start<br>with <em>good conversations.</em></h2><p>Working on a challenging platform problem, building a team,<br class="desktop-break"> or just want to compare notes? I’d love to hear from you.</p><a class="contact-email" href="mailto:inglejaydeep@gmail.com">inglejaydeep@gmail.com <span aria-hidden="true">↗</span></a></div><div class="contact-links"><a href="https://www.linkedin.com/in/jaydeep-ingle" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a><a href="https://github.com/jaydeepingle" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a><a href="assets/docs/Jaydeep-Ingle-Resume.pdf" target="_blank" rel="noopener">Résumé <span class="link-format">PDF</span><span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></div></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a class="footer-name" href="#">Jaydeep Ingle<span>.</span></a><span>Thoughtful engineering. Lasting impact.</span><a href="#">Back to top <span aria-hidden="true">↑</span></a></div></footer>
+</body>
 </html>
