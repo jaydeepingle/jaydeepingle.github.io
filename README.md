@@ -8,10 +8,10 @@ From this directory, run `python3 -m http.server 8000`, then open `http://localh
 
 ## Updating
 
-- `index.html`: profile, selected impact, experience, expertise, and contact links. Titles, dates, and metrics are based on the September 2026 resume.
+- `index.html`: profile, selected impact, experience, expertise, and contact links. Titles, dates, and metrics are based on the current AI infrastructure resume.
 - `assets/css/main.css`: styles, responsive layouts, reduced-motion support, and print layout.
 - `assets/js/main.js`: mobile navigation and active section indicators.
-- `assets/docs/Jaydeep-Ingle-Resume.pdf`: downloadable resume.
+- `assets/docs/Jaydeep-Ingle-Resume.pdf`: downloadable AI infrastructure resume.
 - `assets/img/social-preview.png`: preview for shared links.
 
 The site is published with GitHub Pages. `.nojekyll` enables direct serving of the static assets.
